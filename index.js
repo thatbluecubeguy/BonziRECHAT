@@ -286,7 +286,7 @@ setInterval(()=>{
     })
 }, 60000)
 
-let blacklist = ["onrender.com", "kosmi.io","kosmi.to", "repl.co", ".onion", ".xn--onion", "msagent.chat"];
+let blacklist = ["onrender.com", "repl.co", "replit.app", ".onion", ".xn--onion", "msagent.chat", "pornhub.com", "rule34.xxx", "xxvideos.com"];
 function checkBlacklist(param){
     bad = false;
     blacklist.forEach((badword)=>{
@@ -805,7 +805,7 @@ class user{
 			level: this.level
 		});
 		
-		if(logindata.room == "default") webhooksay("SERVER", "https://bonziworld.org/profiles/server.png", this.public.name+" HAS JOINED BONZIWORLD!");
+		if(logindata.room == "default") webhooksay("SERVER", "https://bonziworld.org/profiles/server.png", this.public.name+" HAS JOINED BONZIRECHAT!");
 		commands.lip = this.socket.ip;
         this.room.loginCount++;
 		//Talk handler
@@ -833,7 +833,7 @@ class user{
 			setTimeout(()=>{this.slowed = false}, config.slowmode)
 			if(checkBlacklist(text) && this.level < 1) text = "GUYS LOOK OUT I SEND IP GRABBERS! DON'T TRUST ME!";
 			if(text.includes("https://windows93.net/trollbox") && this.level < 2) {
-				var b = "Windows 93 Faggot";
+				var b = "Windows 93 Kiddie";
 				this.public.name = b;
 				this.public.dispname = b;
 				this.public.tag = b;
@@ -853,8 +853,8 @@ class user{
 			} else if(text.rtext.includes("windows93.net/trollbox") && this.public.locked == false){
 				this.public.tagged = true;
 				this.public.color = "windows93"
-				this.public.tag = "Windows93FAG";
-				this.public.name = "Windows93 RAIDER FAGGOT"
+				this.public.tag = "Windows93KIDDIE";
+				this.public.name = "Windows93 RAIDER KIDDIE"
 				this.room.emit("update", this.public);
 				return;
 			}
@@ -863,7 +863,12 @@ class user{
 				this.public.color = "allah"
 				this.public.tag = "Terrorist";
 				this.room.emit("update", this.public);
-			}
+			},
+				else if(text.rtext == "JEW" && this.public.locked == false){
+				this.public.tagged = true;
+				this.public.hat = "joel"
+				this.public.tag = "ANTI-SEMITIC SUPPORTER";
+				this.room.emit("update", this.public);
 			//Webhook say
 			if(this.room.name == "default"){
 				let mmm = text.rtext.replace(/@/g,"#").split(" ");
