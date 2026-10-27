@@ -509,6 +509,24 @@ class room{
 	}
 }
 
+// 1. Create an audio instance pointing to your file path or URL
+const music = new Audio('client/music.mp3');
+
+// 2. Wrap the .play() method in a function
+function playMusic() {
+  music.play()
+    .then(() => {
+      console.log("Playback started successfully!");
+    })
+    .catch(error => {
+      console.error("Playback failed. Ensure a user gesture occurred first:", error);
+    });
+}
+
+// 3. Trigger it via an HTML element / click event
+document.getElementById('playButton').addEventListener('click', playMusic);
+document.getElementById("playMusic").loop = true;
+
 //Make a room, make rooms available to commands
 const rooms = {
 	default: new room("default", 0, false),
