@@ -260,7 +260,27 @@ var BonziData = {
 				type: "text",
 				text: "Time for whatever horrible fucking jokes the creator of this site wrote."
 			}
-		]
+		],[
+			{
+				type: "text",
+				text: "Ok, here goes."
+			}
+		],[
+			{
+				type: "text",
+				text: "Prepare to be offended."
+			}
+		],[
+			{
+				type: "text",
+				text: "{NAME}? I didn't know you like my horrible written jokes so much?"
+			}
+		],[
+			{
+				type: "text",
+				text: "TIME FOR THE HAHAHAHA HOHOHOHO HEHEHEHE"
+			}
+		],		
 	],
 	event_list_joke_mid: [
 		[
@@ -312,7 +332,7 @@ var BonziData = {
 			},
 			{
 				type: "text",
-				text: "A giant inflatable buttplug."
+				text: "A giant inflatable nothingburger."
 			}
 		],[
 			{
@@ -321,7 +341,7 @@ var BonziData = {
 			},
 			{
 				type: "text",
-				text: "Sonic's asshole."
+				text: "Sonic's AYOOOOOOOOOOOO WHAT THE FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK?"
 			}
 		],[
 			{
@@ -348,7 +368,7 @@ var BonziData = {
 			},
 			{
 				type: "text",
-				text: "Suck my clock."
+				text: "shut up old hag i want to life live without the \"SFDAAFSDFADSASAFSFADSAFSDFSD BACK IN MY DAY\" back in my day bullshit."
 			}
 		],[
 			{
@@ -366,7 +386,7 @@ var BonziData = {
 			},
 			{
 				type: "text",
-				text: "Cum in them."
+				text: "Water doesn't exist!"
 			}
 		],[
 			{
@@ -390,6 +410,15 @@ var BonziData = {
 				type: "text",
 				text: "I'm a comedic genius, I know."
 			},
+		],[
+			{
+				type: "text",
+				text: "What is a cow that- WAIT HOLD ON GUYS I THINK I KNOW WHERE THIS GOING"
+			},
+			{
+				type: "text",
+				text: "BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHH"
+			}
 		]
 	],
 	event_list_joke_end: [
@@ -440,7 +469,22 @@ var BonziData = {
 				type: "text",
 				text: "Help! I'm being oppressed!"
 			}
-		]
+		],[
+			{
+				type: "text",
+				text: "I HOPE YOU'RE OFFENDED."
+			}
+		],[
+			{
+				type: "text",
+				text: "If you laugh at that, Congratulations, you're going to hell. I'll see you there."
+			}
+		],[
+			{
+				type: "text",
+				text: "I HOPE YOU LIKE THIS JOKE PLEASE SUBSCRIBE TO https://www.youtube.com/@Bonzischannel"
+			}
+		]		
 	],
 
 // ============================================================================
