@@ -59,7 +59,7 @@ Ban.init();
 // Start actually listening
 server.listen(port, function () {
 	console.log(
-		" Welcome to BonziWORLD!\n",
+		" Welcome to BonziRECHAT!\n",
 		"Time to meme!\n",
 		"----------------------\n",
 		"Server listening at port " + port
