@@ -6,7 +6,7 @@ var isChromeBrowser = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(na
 var urlChrome = "https://chrome.google.com/webstore/detail/bonziworld/naiglhkfakaaialhnjabkpaiihglgnmk";
 
 var isiOS = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)/i) != null;
-var urlGPlay = "https://play.google.com/store/apps/details?id=com.jojudge.bonziworld";
+var urlGPlay = "https://play.google.com/store/apps/details?id=com.tbcg.bonzirechat";
 
 $(function() {
 	var support = {
