@@ -368,7 +368,8 @@ var BonziData = {
 			},
 			{
 				type: "text",
-				text: "shut up old hag i want to life live without the \"SFDAAFSDFADSASAFSFADSAFSDFSD BACK IN MY DAY\" back in my day bullshit."
+				text: "shut up old hag i want to life live without the \"SFDAAFSDFADSASAFSFADSAFSDFSD BACK IN MY DAY\" back in my day bullshit.",
+				say: "shut up old hag i want to life live without the SFDAAFSDFADSASAFSFADSAFSDFSD BACK IN MY DAY back in my day bullshit."
 			}
 		],[
 			{
