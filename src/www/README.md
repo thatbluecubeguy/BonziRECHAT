@@ -1,13 +1,13 @@
 [logo]: ./img/readme/logo.png
 ![BonziWORLD logo. I may have taken "inspiration" from WinXP.][logo]
 
-# BonziWORLD
+# BonziRECHAT
 
 ###### Leading the industry in gorilla-based chat clients.
 
 ## What the hell is this?
 
-BonziWORLD is a node.js and socket.io based chat client featuring everyone's most ~~hated~~ loved purple gorilla. The client also uses speak.js to provide text-to-speech voices. Not exactly the original BonziBUDDY voice, but hey, it works.
+BonziRECHAT is a node.js and socket.io based chat client featuring everyone's most ~~hated~~ loved purple gorilla. The client also uses speak.js to provide text-to-speech voices. Not exactly the original BonziBUDDY voice, but hey, it works.
 
 ## Why did you make this? Why WOULD you make this?
 
@@ -49,13 +49,13 @@ If you see any brackets, they indicate a placeholder. Don't type them in.
 	* Don't ask why I implemented this. There's no answer.
 	* You can also right click on people to do the same thing.
 	* If you ever see a person named "fuG", make sure to call them an asshole.
-* `/owo [name]` - owo, wat dis?
+* `/grounded [name]` - OHOHOHOHOH DATS IT YOU ARE GROUNDED FOR LIFE!
 	* kill me
 	* Works pretty much the same as /asshole, right click and all.
 * `/triggered` - The best copypasta.
 * `/linux` - I'd just like to interject for a moment.
 * `/pawn` - Hi, my name is BonziBUDDY, and this is my website.
-* [`/bees`](http://bees.bonziworld.com/) - According to all known laws of aviation, there is no way a bee should be able to fly.
+* [`/bees`] - According to all known laws of aviation, there is no way a bee should be able to fly.
 * `/vaporwave` - ＡＥＳＴＨＥＴＩＣ
 * `/unvaporwave` - ＡＥＳＴＨＥＴＩＣ ＩＳ ＫＩＬＬ
 
@@ -90,5 +90,21 @@ Remember that people can play YouTube videos whenever they want. **Keep your vol
 * Apache Cordova
 * ~~Crosswalk~~ RIP CROSSWALK v1.?.? - v1.4.2
 * scss/sass
-
+* Joseph Judge (Creator)
+* ~~siob_x86 (TRANS PEDO)~~
+* ~~Fune (STUPID RACIST ANTI-SEMITIC SUPPORTER)~~
+* jy
+* RadicalGreen (owner of .net/.kr)
+* UnrealSticky (We never miss you.)
+* IdealBEHH (inspiration)
+* ~~DarlloGuy (SHITCEF LARP)~~
+* Izhan
+* Nothing_Left
+* zack_25
+* 3.5
+* AntiOfficerKirov247/Anonymous/AGENT CR6
+* cheese/chrome
+* Viliager171
+* Nazar Khristov (fuck his old self)
+* and everyone else too!
 You guys are awesome. (And so are you, whoever's reading this!) There are also probably some others I forgot. If I remember you, I'll add you here.
