@@ -2,7 +2,7 @@
 Basically the OG BonziWORLD.net but better. This was built off heyjoeway's BW Patched and had been heavily modified to be much more secure and better, with finally moderation tools.
 
 Enjoy, skiddies. I hope you make this for the better. Looking at you, Rafael, Donutscout and DarlloGuy.
-Default godword is 'bonzi'. Please remember to  change the config beforehand.
+Default godword is 'thisistrueandyoucannotchangemygodwordloser'. Please remember to  change the config beforehand.
 
 ## SETUP
 This is important.
