@@ -456,21 +456,17 @@ function clamp(num, min, max) {
 
 // Default media whitelists
 const DEFAULT_IMAGE_WHITELIST = [
-    'files.catbox.moe',
-    'bonziupload.l5.ca',
-    'litter.catbox.moe',
-    'web.archive.org',
+    'bonziworld.online',
+    'file.garden',
+    'uggu.se',
     'i.ibb.co',
     'media.tenor.com',
     'i.imgur.com'
 ];
 const DEFAULT_VIDEO_WHITELIST = [
-    'files.catbox.moe',
-    'bonziupload.l5.ca',
-    'i.ibb.co',
-    'web.archive.org',
-    'media.tenor.com',
-    'i.imgur.com'
+    'bonzitube.rf.gd',
+    'bonziworld.online',
+    'file.garden'
 ];
 
 const configPath = path.join(__dirname, 'config', 'config.json');
@@ -478,8 +474,8 @@ const bansPath = path.join(__dirname, 'bans.json');
 
 // Default config
 let config = {
-    godmode_password: 'bonzi',
-    moderator_password: 'modpass',
+    godmode_password: 'thisistrueandyoucantleakmygodwordloser',
+    moderator_password: 'thisisamodpass',
     image_whitelist: DEFAULT_IMAGE_WHITELIST.slice(),
     video_whitelist: DEFAULT_VIDEO_WHITELIST.slice(),
     altlimit: 3, // Added like index.js
@@ -494,11 +490,11 @@ try {
         if (loadedConfig && typeof loadedConfig === 'object') {
             config = { ...config, ...loadedConfig };
         }
-        if (typeof config.godmode_password !== 'string') config.godmode_password = 'bonzi';
-if (typeof config.moderator1_password !== 'string') config.moderator1_password = 'modpass1';
-if (typeof config.moderator2_password !== 'string') config.moderator2_password = 'modpass2';
-if (typeof config.moderator3_password !== 'string') config.moderator3_password = 'modpass3';
-if (typeof config.moderator4_password !== 'string') config.moderator3_password = 'modpass4';
+        if (typeof config.godmode_password !== 'string') config.godmode_password = 'thisistrueandyoucantleakmygodwordloser';
+if (typeof config.moderator1_password !== 'string') config.moderator1_password = 'thisisamodpass1';
+if (typeof config.moderator2_password !== 'string') config.moderator2_password = 'thisisamodpass2';
+if (typeof config.moderator3_password !== 'string') config.moderator3_password = 'thisisamodpass3';
+if (typeof config.moderator4_password !== 'string') config.moderator3_password = 'thisisamodpass4';
         if (!Array.isArray(config.image_whitelist) || config.image_whitelist.length === 0) config.image_whitelist = DEFAULT_IMAGE_WHITELIST.slice();
         if (!Array.isArray(config.video_whitelist) || config.video_whitelist.length === 0) config.video_whitelist = DEFAULT_VIDEO_WHITELIST.slice();
         
@@ -1053,30 +1049,29 @@ case 'trusted':
         // Different settings based on which password was used
         if (args[0] === config.moderator1_password) {
             // Developer role (moderator1)
-            rooms[room][guid].color = 'red';
-            rooms[room][guid].name = 'Scorp789';
-            rooms[room][guid].hat = ['scorp'];
+            rooms[room][guid].color = 'blue';
+            rooms[room][guid].name = 'ThatBlueCubeGuy';
+            rooms[room][guid].hat = ['dank cigar tophat'];
             rooms[room][guid].dev = true;
             rooms[room][guid].tempowner = false;
         } else if (args[0] === config.moderator2_password) {
             // Temp Owner role (moderator2)
-            rooms[room][guid].color = 'dev';
-            rooms[room][guid].name = 'CHIEF STICKMAN';
+            rooms[room][guid].color = 'green';
+            rooms[room][guid].name = 'ifeelsoradical';
+            rooms[room][guid].hat = ['bowtie'];            
             rooms[room][guid].tempowner = true;
             rooms[room][guid].dev = false;
         } else if (args[0] === config.moderator3_password) {
-            // Agent Niko role (moderator3)
-            rooms[room][guid].color = 'purple';
-            rooms[room][guid].name = 'Agent Niko';
-            rooms[room][guid].hat = ['niko'];
+            // chace role (moderator3)
+            rooms[room][guid].color = 'pope';
+            rooms[room][guid].name = 'chace';
             rooms[room][guid].tempowner = false;
             rooms[room][guid].dev = true;
         }
         else if (args[0] === config.moderator4_password) {
-            // IZHAN role (moderator4)
-            rooms[room][guid].color = 'white';
-            rooms[room][guid].name = 'Izhan';
-            rooms[room][guid].hat = ['windows'];
+            // WebGL role (moderator4)
+            rooms[room][guid].color = 'glow';
+            rooms[room][guid].name = 'WebGL';
             rooms[room][guid].tempowner = false;
             rooms[room][guid].moderator = true;
         }
@@ -1103,24 +1098,23 @@ case 'modmode':
         
         // Apply different settings based on mod name
         switch(modName) {
-            case 'Scorp':
-                rooms[room][guid].color = 'red';
-                rooms[room][guid].name = 'Scorp789';
-                rooms[room][guid].hat = ['scorp'];
+            case 'ThatBlueCubeGuy':
+                rooms[room][guid].color = 'blue';
+                rooms[room][guid].name = 'ThatBlueCubeGuy';
+                rooms[room][guid].hat = ['dank cigar tophat'];
                 break;
-            case 'Stickman':
-                rooms[room][guid].color = 'dev';
-                rooms[room][guid].name = 'CHIEF STICKMAN';
+            case 'Radical':
+                rooms[room][guid].color = 'green';
+                rooms[room][guid].name = 'ifeelsoradical';
+                rooms[room][guid].hat = ['bowtie'];             
                 break;
-            case 'Niko':
-                rooms[room][guid].color = 'purple';
-                rooms[room][guid].name = 'Agent Niko';
-                rooms[room][guid].hat = ['niko'];
+            case 'chace':
+                rooms[room][guid].color = 'pope';
+                rooms[room][guid].name = 'chace';
                 break;
-            case 'Izhan':
-                rooms[room][guid].color = 'white';
-                rooms[room][guid].name = 'Izhan';
-                rooms[room][guid].hat = ['windows'];
+            case 'WebGL':
+                rooms[room][guid].color = 'glow';
+                rooms[room][guid].name = 'WebGL';
                 break;
         }
         
@@ -1138,8 +1132,8 @@ case 'modmode':
                     io.to(room).emit('bass', { guid, target: args[0] || '' });
                     break;
                     
-                case 'owo':
-                    io.to(room).emit('owo', { guid, target: args[0] || '' });
+                case 'grounded':
+                    io.to(room).emit('grounded', { guid, target: args[0] || '' });
                     break;
                     
                 case 'name':
