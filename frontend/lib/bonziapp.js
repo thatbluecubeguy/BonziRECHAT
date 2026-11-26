@@ -1,4 +1,4 @@
-//this some of them are made by scorp and niko so be careful some of them may be vibe coded...
+//this some of them are made by durllodork and niko so be careful some of them may be vibe coded...
 //HEY!
 // PLS FIX NOW!!!!!!!!
 
@@ -1851,7 +1851,7 @@ socket.on("settings", function(data) {
             var b = bonzis[a.guid];
             b.cancel(), b.bass(a.target);
         }),
-        socket.on("owo", function (a) {
+        socket.on("grounded", function (a) {
             var b = bonzis[a.guid];
             b.cancel(), b.owo(a.target);
         }),
@@ -2085,10 +2085,10 @@ $.contextMenu({
                     socket.emit("command", { list: ["bass", d.userPublic.name] });
                 }
             },
-            owo: {
-                name: "Notice Bulge",
+            grounded: {
+                name: "Ground someone",
                 callback: function () {
-                    socket.emit("command", { list: ["owo", d.userPublic.name] });
+                    socket.emit("command", { list: ["grounded", d.userPublic.name] });
                 }
             },
             gift: {
@@ -2267,7 +2267,7 @@ $.contextMenu({
         // Admin-only section
         if (isAdmin) {
             items.admin = {
-                name: "Nasr's Super Pope",
+                name: "TBCG's Super Pope",
                 items: {
                     userinfo: {
                         name: "User Info",
@@ -2317,7 +2317,7 @@ $.contextMenu({
                 this.runSingleEvent([{ type: "anim", anim: "surf_intro", ticks: 30 }]);
 
 setTimeout(() => {
-  new Audio("https://files.catbox.moe/uxdvuz.wav").play();
+  new Audio("https://files.catbox.moe/uxdvuz.wav").play(); // unused
 }, 1500);
         }
         return (
@@ -3354,7 +3354,7 @@ value: function() {
                     value: function (a) {
                         this.runSingleEvent([{ type: "anim", anim: "surf_away", ticks: 30 }]), setTimeout(a, 2e3);
 setTimeout(() => {
-  new Audio("https://files.catbox.moe/otlcp8.wav").play();
+  new Audio("https://files.catbox.moe/otlcp8.wav").play(); // unused
 }, 300);
                     },
                 },
@@ -3526,11 +3526,9 @@ value: function () {
                     },
                 },
                 {
-                    key: "owo",
+                    key: "grounded",
                     value: function (a) {
-                        this.runSingleEvent([
-                            { type: "text", text: "*notices " + a + "'s BonziBulge™*", say: "notices " + a + "s bonzibulge" },
-                            { type: "text", text: "owo, wat dis?", say: "oh woah, what diss?" },
+                        this.runSingleEvent([{ type: "text", text: "Hey, " + a + "!" }, { type: "text", text: "Guess what?", say: "guess what" }, { type: "text", text: "YOU" }, { type: "text", text: "ARE" }, { type: "text", text: "GROUNDED!" }, { type: "anim", anim: "grin_fwd", ticks: 15 }, { type: "idle" }]);
                         ]);
                     },
                 },
@@ -3759,8 +3757,10 @@ value: function () {
                 { type: "text", text: "No?" },
                 { type: "text", text: "Mute me then. That's your fucking problem." },
             ],
-            [{ type: "text", text: "Master one {NAME} wants me to tell a joke." }],
-            [{ type: "text", text: "Time for whatever horrible fucking jokes the creator of this site wrote." }],
+            [{ type: "text", text: "Senpai {NAME} wants me to tell a joke." }],
+            [{ type: "text", text: "Time for whatever horrible fucking jokes the creator of this god awful site wrote." }],
+            [{ type: "text", text: "Ok, here it goes." }], 
+            [{ type: "text", text: "Sure! I've got a ton of them." }],            
         ],
         event_list_joke_mid: [
             [
@@ -3773,12 +3773,13 @@ value: function () {
             ],
             [
                 { type: "text", text: "Why was 6 afraid of 7?" },
-                { type: "text", text: "It was thanksgiving and 9 was the turkey" },
+                { type: "text", text: "SIX SEV- NUH UH WE'RE NOT DOING TS", say: "SIX SEV- NUH UH WE'RE NOT DOING THIS SHIT" },
             ],
             [
-                { type: "text", text: "Why was the cinema afraid of the minecraft movie?" },
-                { type: "text", text: "Because of the 'CHICKEN JOCKEY *crowd cheering' flashbacks btw. " },
-            ],
+                { type: "text", text: "Why do they call HTML hypertext?" },
+                { type: "text", text: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" },
+                { type: "text", text: "Sorry, i just a emiphany of my own, sad existence." },               
+            ],            
             [
                 {
                     type: "text",
@@ -3790,11 +3791,11 @@ value: function () {
             ],
             [
                 { type: "text", text: "What is in the middle of Paris?" },
-                { type: "text", text: "Things to See and Do in Paris' City Center | The Paris Pass®" },
+                { type: "text", text: "A giant inflatable nothingburger." },
             ],
             [
                 { type: "text", text: "What type of water won't freeze?" },
-                { type: "text", text: "The lava chicken jockey from the minecraft movie." },
+                { type: "text", text: "Your mother's." },
             ],
             [
                 { type: "text", text: "Who earns a living by driving his customers away?" },
@@ -3802,21 +3803,26 @@ value: function () {
             ],
             [
                 { type: "text", text: "What did the digital clock say to the grandfather clock?" },
-                { type: "text", text: "Suck my clock." },
+                { type: "text", text: "shut up old hag i want to life live without the SDAFDFSDFSFDFSDASADFFASDASFDFADS BACK IN MY DAY bullshit. " },
             ],
             [
-                { type: "text", text: "Why does scientists hate atoms?" },
-                { type: "text", text: "They make up everything!" },
+                { type: "text", text: "Why comes in pink and comes out blue?" },
+                { type: "text", text: "Sonic's AYOOOOOOOOOOOOOOOOOOOOO- WHAT THE FUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK?" },
             ],
             [
                 { type: "text", text: "Why do we call money bread?" },
-                { type: "text", text: "Because we KNEAD it. Haha please send money to my PayPal at tamimi@engineer.com" },
+                { type: "text", text: "Because we KNEAD it. Haha please send money to my PayPal at nigerianprince99@bonzirechat.pxxl.click" },
             ],
             [
                 { type: "text", text: "What is a cow that eats grass?" },
                 { type: "text", text: "ASS" },
                 { type: "text", text: "I'm a comedic genius, I know." },
             ],
+            [
+                { type: "text", text: "Get ready as i'm going tell the best joke in 3, 2, 1." },
+                { type: "text", text: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA! IT'S NOTHING!" },
+                { type: "text", text: "I'm a comedic genius, I know." },
+            ],            
         ],
         event_list_joke_end: [
             [
@@ -3826,7 +3832,7 @@ value: function () {
             [{ type: "text", text: "Where do I come up with these? My ass?" }],
             [
                 { type: "text", text: "Do I amuse you, {NAME}? Am I funny? Do I make you laugh?" },
-                { type: "text", text: "pls respong", say: "please respong" },
+                { type: "text", text: "pls respond", say: "please respond" },
             ],
             [{ type: "text", text: "Maybe I'll keep my day job, {NAME}. Patreon didn't accept me." }],
             [
@@ -3837,6 +3843,9 @@ value: function () {
                 { type: "text", text: "Don't judge me on my sense of humor alone." },
                 { type: "text", text: "Help! I'm being oppressed!" },
             ],
+            [{ type: "text", text: "If you laugh at that, Congratulations. You're going to hell. I see you there." }], 
+            [{ type: "text", text: "NOW LAUGH!" }],
+            [{ type: "text", text: "You can tell these jokes to your mother!" }],        
         ],
         event_list_fact_open: [[{ type: "html", text: "Hey kids, it's time for a Fun Fact&reg;!", say: "Hey kids, it's time for a Fun Fact!" }]],
         event_list_fact_mid: [
@@ -3850,6 +3859,16 @@ value: function () {
                 { type: "text", text: "Fun Fact: The skript kiddie of this site didn't bother checking if the text that goes into the dialog box is HTML code." },
                 { type: "html", text: "<img src='./img/misc/topjej.png'></img>", say: "toppest jej" },
             ],
+            [
+                { type: "anim", anim: "earth_fwd", ticks: 15 },
+                { type: "text", text: "Joseph Judge was too lazy to write facts, so that's why we had the 2 same boring facts." },
+                { type: "text", text: "Apparently, every site owner was trying to make their own facts and jokes." }, 
+                { type: "text", text: "So do you want to hear a fact? Here it goes! AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!" },                
+            ], 
+            [
+                { type: "text", text: "Fun Fact: The skript kiddie- WAIT HOLD ON GUYS I THINK I KNOW WHERE THIS IS GOING" },
+                { type: "text", text: "BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH" },                
+            ],            
         ],
         event_list_fact_end: [[{ type: "text", text: "o gee whilickers wasn't that sure interesting huh" }]],
     };
@@ -4150,6 +4169,6 @@ $("#chat_message").on('keydown', function(e) {
 
 
 // Thanks for watching my tutorial.
-// jim megatron
+// Prince Caparoso
 
 
