@@ -1,7 +1,7 @@
-# KhanWORLD
-Basically CyganWORLD but better. This was built off CyganWORLD and had been heavily modified to be much more secure and better, with finally moderation tools.
+# BonziRECHAT
+Basically the OG BonziWORLD.net but better. This was built off heyjoeway's BW Patched and had been heavily modified to be much more secure and better, with finally moderation tools.
 
-Enjoy, skiddies. I hope you make this for the better. Looking at you, Rafael.
+Enjoy, skiddies. I hope you make this for the better. Looking at you, Rafael, Donutscout and DarlloGuy.
 Default godword is 'bonzi'. Please remember to  change the config beforehand.
 
 ## SETUP
@@ -29,7 +29,7 @@ By default, the server runs on port 80.
 - `/backflip` - Do a backflip
 - `/triggered` - Get triggered
 - `/linux` - Interject about Linux
-- `/owo [name]` - Notice someone's bulge
+- `/grounded [name]` - Ground someone
 - `/asshole [name]` - Call someone an asshole
 
 ### Admin Commands (Requires Godmode)
